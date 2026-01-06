@@ -53,7 +53,24 @@ export default function ProductRow({
 
         <div className="right">
           {isEmpty ? (
-            <div></div> // Empty space for placeholder products
+            <button
+              className="add-discount-btn"
+              onClick={() => onEdit(index)}
+              // onClick={() => {
+              //   // Add discount logic here, e.g., apply discount or toggle
+              //   const copy = [...products];
+              //   // Example: toggle discount on/off
+              //   if (copy[index].discount.value > 0) {
+              //     copy[index].discount.value = 0;
+              //   } else {
+              //     copy[index].discount.value = 10; // default 10%
+              //   }
+              //   setProducts(copy);
+              // }}
+            >
+              Add Discount
+              {/* {product.discount.value > 0 ? "Remove" : "Add"} Discount */}
+            </button> // Empty space for placeholder products
           ) : (
             <>
               <input

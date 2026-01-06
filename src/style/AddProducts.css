@@ -469,9 +469,9 @@ body {
 
 .add-discount-btn {
   display: block;
-  margin: 24px auto 0;
+  margin: 0px auto 0;
   padding: 6px 17px;
-  /* border: 1px solid #059669; */
+  border: 0px solid #059669;
   background: #059669;
   color: #fff;
   border-radius: 6px;
